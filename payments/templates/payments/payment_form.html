@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Payment</title>
+</head>
+<body>
+    <h1>Pay for a Service</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Pay with M-Pesa</button>
+    </form>
+</body>
+</html>
